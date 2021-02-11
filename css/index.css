@@ -1,0 +1,69 @@
+body {
+  background: lightblue;
+  text-align: center;
+}
+
+.cloudimg {
+  width: 100%;
+  padding: 20px;
+  background: lightblue;
+  box-sizing: border-box;
+}
+/* transform is a property that helps  to rotate,scale,translate */
+
+/* translate x,y will change the axis  trns
+
+tanslate x(200px)
+         y(200px)
+        x,y(2000px,200px)
+
+
+
+*/
+
+img {
+  transform: translateX(200px);
+}
+
+/* scale will make size big or small
+x
+y
+z */
+/*
+img {
+  transform: scaleY(3,5);
+}
+*/
+/* rotate x
+y
+z anti clock wise
+*/
+/*
+img {
+  transform: rotate(90deg);
+}
+*/
+/* all together  */
+
+/*
+img {
+  transform: rotateZ(-90deg) translateY(200px) scale(2);
+}
+*/
+
+/*  transitions */
+.circle {
+  width: 100px;
+  padding: 50px;
+  line-height: 0;
+  margin: auto;
+  background: pink;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 1s;
+}
+.circle:hover {
+  background: black;
+  transform: rotate(360deg);
+}
